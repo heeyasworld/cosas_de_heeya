@@ -4,12 +4,6 @@
   <title>HEEYASWORLD</title>
   <meta charset="utf-8">
   <style>
-    #active {
-      color:red;
-    }
-    .saw {
-      color:gray;
-    }
     a {
       color:black;
       text-decoration: none;
@@ -30,27 +24,40 @@
     body {
       margin:0;
     }
+    #grid {
+      display:grid;
+      grid-template-columns:150px 1fr;
+    }
+    #grid ol {
+      padding-left:35px;
+    }
+    #grid #article {
+      padding:20px;
+    }
+    h3 {
+      margin:0;
+    }
   </style>
 </head>
 <body>
   <h1><a href="index.html">HEEYA</a></h1>
-  <ol>
-    <li><a href="1.html" class="saw">희야는 누구?</a></li>
-    <li><a href="2.html" class="saw" id="active">무슨 일해요?</a></li>
-    <li><a href="3.html">더 많은 정보</a></li>
-  </ol>
-  <h3>2. 무슨 일해요?</h3>
-  <p>희야는 <strong>일본어</strong>를 부산 혹은 온라인상에서 가르치는 일을 하고 있습니다. 일본어 뿐만 아니라 일본 문화에 관련된 부분까지도 생생한 희야의 경험담과 함께 즐겁게 배우고 싶으시다면 <strong>카카오톡 아이디 SASSYHEEYA</strong>로 검색후 연락주시면 됩니다.</p>
-  <p>수업과 관련해 더 자세한 내용을 알고 싶으시다면 <a href="https://blog.naver.com/heeyasworld/222130673283" target="_blank" title="강사 프로필 및 수업 안내">클릭</a>해주세요.</p>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">희야는 누구?</a></li>
+      <li><a href="2.html">무슨 일해요?</a></li>
+      <li><a href="3.html">더 많은 정보</a></li>
+    </ol>
+    <div id="article">
+      <h3>2. 무슨 일해요?</h3>
+      <p>희야는 <strong>일본어</strong>를 부산 혹은 온라인상에서 가르치는 일을   하고 있습니다. 일본어 뿐만 아니라 일본 문화에 관련된 부분까지도 생생한 희야의 경험담과 함께 즐겁게 배우고 싶으시다면 <strong>카카오톡 아이디 SASSYHEEYA</strong>로 검색후 연락주시면 됩니다.</p>
+      <p>수업과 관련해 더 자세한 내용을 알고 싶으시다면 <a href="https://blog.naver.com/heeyasworld/220806598018" target="_blank" title="강사 프로필 및 수업 안내">클릭</a>해주세요.</p>
+      <!-- 유튜브 비디오 -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Cu1UBBuulhQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>덧붙여서 워킹 홀리데이를 가시려는 분들을 위한 동영상입니다. 참고해주세요.</p>
+    </div>
+  </div>
 
-
-<!-- 유튜브 비디오 -->
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/Cu1UBBuulhQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <p>덧붙여서 워킹 홀리데이를 가시려는 분들을 위한 동영상입니다. 참고해주세요.</p>
-  <p>
-
-
-    <div id="disqus_thread"></div>
+  <p>  <div id="disqus_thread"></div>
 <script>
 
 /**
