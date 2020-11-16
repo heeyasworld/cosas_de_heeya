@@ -4,10 +4,41 @@
   <title>HEEYASWORLD</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
+  <script>
+    function nightDayHandler(self){
+      var target = document.querySelector('body');
+      if(self.value === 'night') {
+        target.style.backgroundColor='black';
+        target.style.color='white';
+        self.value='day';
+
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length){
+          alist[i].style.color = 'powderblue';
+          i = i + 1;
+        }
+      } else {
+        target.style.backgroundColor='white';
+        target.style.color='black';
+        self.value='night';
+
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length) {
+          alist[i].style.color = 'blue';
+          i = i + 1;
+        }
+      }
+    }
+  </script>
 </head>
 
 <body>
-  <h1><a href="index.html">HEEYA</a></h1>
+  <input type="button" value="night" onclick="
+    nightDayHandler(this);
+  ">
+    <h1><a href="index.html">HEEYA</a></h1>
   <div id="grid">
     <ol>
       <li><a href="1.html">희야는 누구?</a></li>
@@ -16,7 +47,7 @@
     </ol>
     <div id="article">
       <h3>더 많은 정보</h3>
-      <p>희야의 삶은 계속해서 업데이트됩니다. 더 많은 최신 정보를 알고 싶다면 <a href="https://heeyasworld.tistory.com" title="희야의 티스토리 블로그" target="_blank"><font color="pink"><strong>희야의 티스토리 블로그</strong></font></a>에 방문해보세요.</p>
+      <p>희야의 삶은 계속해서 업데이트됩니다. 더 많은 최신 정보를 알고 싶다면 <a href="https://heeyasworld.tistory.com" title="희야의 티스토리 블로그" target="_blank"><strong>희야의 티스토리 블로그</strong></a>에 방문해보세요.</p>
       <img src="coding1.jpg" width=700>
     </div>
   </div>
