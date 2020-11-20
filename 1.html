@@ -1,36 +1,72 @@
-var Links = {
-  setColor : function(color){
-  //   var alist = document.querySelectorAll('a');
-  //   var i = 0;
-  //   while(i < alist.length){
-  //     alist[i].style.color = color;
-  //     i = i + 1;
-  // }
-  $('a').css('color', color);
-  }
-}
-  var Body = {
-    setColor : function(color){
-      // document.querySelector('body').style.color = color;
-      $('body').css('color', color);
-    },
-    setBackgroundColor : function(color){
-      // document.querySelector('body').style.backgroundColor = color;
-      $('body').css('backgroundColor', color);
-    }
-  }
+<!doctype html>
+<html>
+<head>
+  <title>HEEYASWORLD</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="colors.js"></script>
+</head>
+<body>
+  <input type="button" value="night" onclick="
+    nightDayHandler(this);
+  ">
+  <h1><a href="index.html">HEEYA</a></h1>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html" id="active">희야는 누구?</a></li>
+      <li><a href="2.html">무슨 일해요?</a></li>
+      <li><a href="3.html">더 많은 정보</a></li>
+    </ol>
+    <div id="article">
+      <h3>1. 희야는 누구?</h3>
+      <p>희야는 1991년 11월 11일 부산에서 태어났으며, 본명은 비밀입니다.<br> 외국어를 좋아하고 새로운 것을 경험하거나 배우는 것에 있어서 굉장히 개방적인 편입니다.<br>여행을 좋아하지만 계획 짜는 것에 굉장히 스트레스를 받으며 귀찮아하는 편입니다.</p>
+      <p>어릴 때부터 하기 싫은 것은 하지 않는 성격이었습니다.<br> 남들이 정해놓은 룰대로 사는 것을 싫어하고, 그러한 성격 탓인지 사회 생활에 취약한 편입니다.<br> 하지만 새로운 사람을 만나고 이야기하는 것을 굉장히 좋아합니다.</p>
+      <p>잊지 못할 여행으로 남해 땅끝마을부터 고성 통일전망대까지<br> 약 40여일동안 두 다리로 걸어서 국토종단을 한 적이 있습니다.<br> 이때 여비를 벌려고 휴학후 아웃바운드 콜센터에 들어갔었는데<br> 돈은 잘 벌었지만 뒤지는 줄 알았습니다.</p>
+      <p>일어일문학대학교를 졸업한 후에는 일본 워킹홀리데이를 갔다가<br> 취업비자로 전환해 약 1년 6개월간 일본에 살았습니다.<br> 이때 해외를 나간 게 처음이었고, 도쿄로 들어가서 최남단인 오키나와까지<br> 배낭여행을 하고 오키나와가 마음에 들어 그곳에 정착해 살았었습니다.</p>
+      <p>일본 생활에 염증을 느껴 다시 돈을 모아 호주 워킹홀리데이를 떠나기 위해<br> 한국에 들어왔는데 생각보다 돈이 안 모였습니다.<br> 어영부영하다가 꽤 시간이 흘렀지만<br> 입국하고 한 달 뒤부터 새롭게 배운 스페인어의 영향으로<br> 호주가 아닌 남미 칠레 워킹홀리데이를 1년간 떠났습니다.</p>
+      <p>위험한 만큼 자유로운 남미와 스페인어의 매력에 흠뻑 빠져서<br> 그대로 남미를 이곳저곳 여행한 뒤 정착해볼 생각이었으나 코로나 사태가 터지면서<br> 2020년 4월 아르헨티나에서 무려 308만원의 편도 비행기 값을 지불하고 귀국하게 됩니다.</p>
+          <img src="free.jpg" width=700>
+    </div>
+  </div>
 
-   function nightDayHandler(self){
-    var target = document.querySelector('body');
-    if(self.value === 'night') {
-      Body.setBackgroundColor('black');
-      Body.setColor('white');
-      self.value='day';
-      Links.setColor('yellow');
-    } else {
-      Body.setBackgroundColor('white');
-      Body.setColor('black');
-      self.value='night';
-      Links.setColor('blue');
-    }
-  }
+  <p>  <div id="disqus_thread"></div>
+  <script>
+
+  /**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  /*
+  var disqus_config = function () {
+  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  };
+  */
+  (function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = 'https://heeyasworld.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                              </p>
+
+
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5f96f7d5aca01a168835dcc1/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+
+  </body>
+</html>
