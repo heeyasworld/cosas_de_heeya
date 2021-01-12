@@ -1,0 +1,52 @@
+h1 {
+    background-color:lightblue;
+    text-align:center;
+    margin : 0;
+    margin-top:10px;
+    padding: 0;
+    height:80px;
+    font-size:40pt;
+}
+h2 {
+    text-align:center;
+    background-color:mistyrose;
+    height:40px;
+}
+a {
+    color:black;
+    text-decoration:none;
+}
+p {
+    text-align:center;
+}
+button {
+    align-items: center;
+    height: 40px;
+    width: 300px;
+    font-size: 16px;
+    background-color:lightblue;
+    border: 1px solid gray;
+    box-shadow: 5px 5px 10px gray;
+}
+.but {
+    width: auto;
+    height:auto;
+    box-shadow:none;
+}
+li {
+    list-style:none;
+}
+fieldset {
+    text-align: center;
+}
+mark {
+    background-color:mistyrose;
+}
+#active {
+    color:red;
+    font-weight: 700;
+}
+#grid {
+    display:grid;
+    grid-template-columns: 150px 1fr 1fr;
+}
